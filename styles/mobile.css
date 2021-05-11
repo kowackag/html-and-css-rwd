@@ -15,7 +15,7 @@
 /* ------HEADER----- */
 
 .page__header {
-    background: url(../images/banner/banner.png) 50% 50%/cover no-repeat;
+    background: url(../images/banner/banner.png) 50% 50% / cover no-repeat;
     color: white;
 }
 
@@ -26,8 +26,6 @@
     position: relative;
     background-color: #2C2C2C;
 }
-
-.header__logo {}
 
 .nav__item {
     padding-left: 30px;
@@ -73,6 +71,7 @@
 
 .header__subtitle {
     margin-top: 20px;
+    font-size: 18px;
 }
 
 .header__btn {
@@ -89,3 +88,75 @@
     background-color: #37EBED;
 }
 
+/* -----FEATURES----- */
+
+.features {
+  color: #353535;
+}
+
+.features__title {
+    font-size: 36px;
+    text-align: center;
+}
+
+.features__list {
+    margin: 40px auto;
+    width: max(270px, 50%);
+    text-align: center;
+}
+
+.features__icon-box {
+    margin: 40px auto;
+    position: relative;
+    width: 120px;
+    height: 120px;
+    border-radius: 20px;
+}
+
+.features__icon-box--blue {
+    background-color: #329BFB;
+}
+
+.features__icon-box--orange {
+    background-color: #FD9B5D;
+}
+
+.features__icon-box--green {
+    background-color: #76F4B2;
+}
+
+.features__icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.features__item {
+    font-size: 26px;
+}
+
+.features__subtitle {
+    margin-top: 80px;
+    font-size: 36px;
+}
+
+.features__description {
+    margin-top: 40px;
+    font-size: 18px;
+    line-height: 200%;
+}
+
+.features__btn {
+    margin-top: 40px;
+}
+
+.button--features {
+    background-color: #0181F5;
+}
+
+.features__image {
+    margin: 40px 0;
+}
+
+/* -----OPINIONS----- */
