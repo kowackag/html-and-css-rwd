@@ -1,0 +1,91 @@
+.container {
+    padding: 10px;
+}
+
+.button {
+    display: inline-block;
+    padding: 20px 40px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: white;
+}
+
+/* ------HEADER----- */
+
+.page__header {
+    background: url(../images/banner/banner.png) 50% 50%/cover no-repeat;
+    color: white;
+}
+
+/* -----navigation----- */
+
+.header__nav {
+    padding: 10px;
+    position: relative;
+    background-color: #2C2C2C;
+}
+
+.header__logo {}
+
+.nav__item {
+    padding-left: 30px;
+    line-height: 250%;
+}
+
+.nav__icon {
+    font-size: 24px;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+
+.nav__list {
+    display: none;
+}
+
+.nav__link {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.fa-chevron-down {
+    margin-left: 20px;
+}
+
+.nav__switcher:checked+.nav__list {
+    display: block;
+}
+
+.header-btn {
+    display: none;
+}
+
+/* -----Header-main----- */
+
+.header__title {
+    margin-top: 40px;
+    font-size: 34px;
+    line-height: 120%;
+}
+
+.header__subtitle {
+    margin-top: 20px;
+}
+
+.header__btn {
+    display: inline-block;
+    margin-top: 60px;
+}
+
+.header__image-box {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.button--header {
+    background-color: #37EBED;
+}
+

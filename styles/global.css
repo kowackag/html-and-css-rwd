@@ -1,0 +1,12 @@
+body {
+    font-family: "Poppins", arial, sans-serif;
+}
+
+.nav__switcher {
+    display: none;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: white;
+}
