@@ -38,6 +38,7 @@ html {
 
 .nav__item {
     padding-left: 30px;
+    font-size: 1.4rem;
     line-height: 250%;
 }
 
@@ -226,13 +227,13 @@ html {
 }
 
 .pricing__title {
-    margin: 40px 10px 0;
+    margin: 40px 40px 0;
     font-size: 2.8rem;
     text-align: center;
 }
 
 .pricing__subtitle {
-    margin: 20px 10px 0;
+    margin: 20px 40px 0;
     font-size: 1.4rem;
     text-align: center;
 }
@@ -293,3 +294,91 @@ html {
 }
 
 /* -----APP----- */
+
+.app {
+    background-color: #5DB2FF;
+    text-align: center;
+}
+
+.app__title {
+    padding: 80px 10px 20px;
+    font-size: 2.8rem;
+    text-align: center;
+    color: white;
+}
+
+.app__link {
+    display: inline-block;
+    padding-bottom: 80px
+}
+
+/* ------contact----- */
+
+.contact {
+    background-color: #1F1F1F;
+    font-size: 1.4rem;
+    color: #888;
+
+}
+
+.contact__title {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 2rem;
+    color: white;
+}
+
+.contact__list {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20px;
+}
+
+.contact__icon {
+    display: flex;
+    margin: 0 5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #444;
+}
+
+.fab {
+    margin: auto;
+}
+
+.support {
+    font-size: 1.4rem;
+    line-height: 400%;
+}
+
+.support__title {
+    margin-top: 20px;
+    font-size: 1.8rem;
+    color: white;
+}
+
+.support__link {
+    text-decoration: none;
+    color: #888;
+}
+
+/* -----FOOTER----- */
+
+.footer {
+    background-color: #000;
+    font-size: 1.4rem;
+    color: #888;
+    text-align: center;
+}
+
+.footer__line {
+    display:inline-block;
+    margin: 0 5px;
+    height: 1rem;
+    border-left: 1px solid #888
+}
+
+.footer__company {
+    color: royalblue;
+}
