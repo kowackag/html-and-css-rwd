@@ -1,0 +1,82 @@
+html {
+    font-size: 11px;
+}
+
+/* -----HEADER----- */
+
+.header__container {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.header__image-box {
+    margin-top: 0;
+}
+
+/* -----FEATURES----- */
+
+.features__title {
+    width: 40vw;
+}
+
+.features__list {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.features__item {
+    width: 25%;
+}
+
+.features__about {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    align-items: center;
+    justify-items: start;
+    margin: 80px auto;
+}
+
+.features__image {
+    grid-area: 1/2/4/3;
+}
+
+.features__subtitle {
+    margin-top: 0;
+}
+
+/* -----OPINION----- */
+
+.opinions-box__title {
+    margin: 0 auto;
+    width: 50%;
+}
+
+/* -----PRICE----- */
+
+.pricing__plan-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pricing__plan {
+    margin: 80px 0;
+    width: 32%;
+}
+
+/* -----APP----- */
+
+.app__title {
+    width: 60%;
+    text-align: start;
+}
+
+/* -----CONTACT----- */
+
+.contact__container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}

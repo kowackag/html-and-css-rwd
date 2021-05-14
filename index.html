@@ -13,42 +13,46 @@
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/global.css">
     <link rel="stylesheet" href="./styles/mobile.css">
-    <link rel="stylesheet" media="(min-width:760px)" href="./styles/tablet.css">
-    <link rel="stylesheet" media="(min-width:1200px)" href="./styles/desktop.css">
+    <link rel="stylesheet" media="(min-width:768px)" href="./styles/tablet.css">
+    <link rel="stylesheet" media="(min-width: 1200px)" href="./styles/desktop.css">
 </head>
 
 <body>
-    <header class="page__header">
-
+    <header class="header">
         <nav class="header__nav nav">
-            <img src="./images/logo.png" alt="Logo AppLab" class="header__logo">
-            <label class="nav__icon" for="switcher"><i class="fas fa-bars"></i></label>
-            <input type="checkbox" class="nav__switcher" id="switcher">
-            <ul class="nav__list">
-                <li class="nav__item"><a href="" class="nav__link">Home</a></li>
-                <li class="nav__item"><a href="" class="nav__link">Fututres</a></li>
-                <li class="nav__item"><a href="" class="nav__link">Pricing</a></li>
-                <li class="nav__item">Blog <i class="fas fa-chevron-down"></i>
-                    <ul class="nav__item-lvl2">
-                        <li class="nav__item"><a href="" class="nav__link">News</a></li>
-                        <li class="nav__item"><a href="" class="nav__link">Opinion</a></li>
-                    </ul>
-                </li>
-                <li class="nav__item">Pages<i class="fas fa-chevron-down"></i>
-                    <ul class="nav__item-lvl2">
-                        <li class="nav__item"><a href="" class="nav__link">Service</a></li>
-                        <li class="nav__item"><a href="" class="nav__link">Search</a></li>
-                    </ul>
-                </li>
-                <li class="nav__item"><a href="" class="nav__link">Contact</a></li>
-            </ul>
-            <button class="header-btn button button--nav"></button>
+            <div class="nav__container container">
+                <img src="./images/logo.png" alt="Logo AppLab" class="header__logo">
+                <label class="nav__icon" for="switcher"><i class="fas fa-bars"></i></label>
+                <input type="checkbox" class="nav__switcher" id="switcher">
+                <ul class="nav__list">
+                    <li class="nav__item nav__item--lvl1"><a href="#" class="nav__link">Home</a></li>
+                    <li class="nav__item nav__item--lvl1"><a href="#" class="nav__link">Futures</a></li>
+                    <li class="nav__item nav__item--lvl1"><a href="#" class="nav__link">Pricing</a></li>
+                    <li class="nav__item nav__item--lvl1">Blog <i class="fas fa-chevron-down"></i>
+                        <ul class="nav__list-lvl2">
+                            <li class="nav__item"><a href="#" class="nav__link nav__link--lvl2">News</a></li>
+                            <li class="nav__item"><a href="#" class="nav__link nav__link--lvl2">Opinion</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__item nav__item--lvl1">Pages<i class="fas fa-chevron-down"></i>
+                        <ul class="nav__list-lvl2">
+                            <li class="nav__item"><a href="#" class="nav__link nav__link--lvl2">Service</a></li>
+                            <li class="nav__item"><a href="#" class="nav__link nav__link--lvl2">Search</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__item nav__item--lvl1"><a href="" class="nav__link">Contact</a></li>
+                </ul>
+                <button class="header-btn button button--nav">Download</button>
+            </div>
         </nav>
-        <div class="container">
-            <h1 class="header__title">Promote your App with Applab</h1>
-            <p class="header__subtitle">Get more users to promote your app with this template</p>
-            <button class="header__btn button button--header">Get Start Now</button>
-            <div class="header__image-box"><img class="header__image" src="./images/phone.png" alt="">
+        <div class="header__container container">
+            <div>
+                <h1 class="header__title">Promote your app with Applab</h1>
+                <p class="header__subtitle">Get more users to promote your app with this template</p>
+                <button class="header__btn button button--header">Get Start Now</button>
+            </div>
+            <div class="header__image-box">
+                <img class="header__image" src="./images/phone.png" alt="">
             </div>
         </div>
     </header>
@@ -76,7 +80,8 @@
             </ul>
             <section class="features__about">
                 <h3 class="features__subtitle">Features that give you real feel</h3>
-                <p class="features__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, nisi
+                <p class="features__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis,
+                    nisi
                     tempora. Aliquam, ic assumenda hic assumenda hic assumenda hic assumenda. Dicta cupiditate amet
                     tempora ratione recusandae!</p>
                 <button class="features__btn button button--features">Download Now</button>
@@ -86,9 +91,9 @@
     </article>
     <article class="opinions-box">
         <div class="opinions-box__background"></div>
-        <div class="opinions-box__content-box">
+        <div class="opinions-box__content-box container">
             <h2 class="opinions-box__title">Review from our regular users</h2>
-            <section class="opinion opinion--first">
+            <section class="opinion">
                 <p class="opinion__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
                     cupiditate
                     reprehenderit exercitationem corrupti. Facilis alias dolorem.
@@ -102,69 +107,75 @@
     <article class="pricing">
         <h2 class="pricing__title">Unlock full Power</h2>
         <p class="pricing__subtitle">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo, delectus.</p>
-        <section class="pricing__plan">
-            <header class="pricing__plan-header pricing__plan-header--first">
-                <h4 class="pricing__plan-title">Basic</h4>
-                <p class="pricing__plan-price">$6</p>
-            </header>
-            <ul class="pricing__plan-info-list">
-                <li class="pricing__plan-info">One User</li>
-                <li class="pricing__plan-info">1000 elements</li>
-                <li class="pricing__plan-info">Webmail Support</li>
-                <li class="pricing__plan-info">10GB Cloud Storage</li>
-            </ul>
-            <button class="pricing__btn button button--price">Get Now</button>
-        </section>
-        <section class="pricing__plan">
-            <header class="pricing__plan-header pricing__plan-header--second">
-                <h4 class="pricing__plan-title">Team</h4>
-                <p class="pricing__plan-price">$8</p>
-            </header>
-            <ul class="pricing__plan-info-list">
-                <li class="pricing__plan-info">One User</li>
-                <li class="pricing__plan-info">1000 elements</li>
-                <li class="pricing__plan-info">Webmail Support</li>
-                <li class="pricing__plan-info">100GB Cloud Storage</li>
-                <li class="pricing__plan-info">Unlimited Users limit</li>
-            </ul>
-            <button class="pricing__btn button button--price">Get Now</button>
-        </section>
-        <section class="pricing__plan">
-            <header class="pricing__plan-header pricing__plan-header--third">
-                <h4 class="pricing__plan-title">Basic</h4>
-                <p class="pricing__plan-price">$6</p>
-            </header>
-            <ul class="pricing__plan-info-list">
-                <li class="pricing__plan-info">1000 elements</li>
-                <li class="pricing__plan-info">Webmail Support</li>
-                <li class="pricing__plan-info">100GB Cloud Storage</li>
-                <li class="pricing__plan-info">Unlimited Users limit</li>
-            </ul>
-            <button class="pricing__btn button button--price">Get Now</button>
-        </section>
+        <div class="pricing__plan-container">
+            <section class="pricing__plan">
+                <header class="pricing__plan-header pricing__plan-header--first">
+                    <h4 class="pricing__plan-title">Basic</h4>
+                    <p class="pricing__plan-price">$6</p>
+                </header>
+                <ul class="pricing__plan-info-list">
+                    <li class="pricing__plan-info">One User</li>
+                    <li class="pricing__plan-info">1000 elements</li>
+                    <li class="pricing__plan-info">Webmail Support</li>
+                    <li class="pricing__plan-info">10GB Cloud Storage</li>
+                </ul>
+                <button class="pricing__btn button button--price">Get Now</button>
+            </section>
+            <section class="pricing__plan">
+                <header class="pricing__plan-header pricing__plan-header--second">
+                    <h4 class="pricing__plan-title">Team</h4>
+                    <p class="pricing__plan-price">$8</p>
+                </header>
+                <ul class="pricing__plan-info-list">
+                    <li class="pricing__plan-info">One User</li>
+                    <li class="pricing__plan-info">1000 elements</li>
+                    <li class="pricing__plan-info">Webmail Support</li>
+                    <li class="pricing__plan-info">100GB Cloud Storage</li>
+                    <li class="pricing__plan-info">Unlimited Users limit</li>
+                </ul>
+                <button class="pricing__btn button button--price">Get Now</button>
+            </section>
+            <section class="pricing__plan">
+                <header class="pricing__plan-header pricing__plan-header--third">
+                    <h4 class="pricing__plan-title">Basic</h4>
+                    <p class="pricing__plan-price">$6</p>
+                </header>
+                <ul class="pricing__plan-info-list">
+                    <li class="pricing__plan-info">1000 elements</li>
+                    <li class="pricing__plan-info">Webmail Support</li>
+                    <li class="pricing__plan-info">100GB Cloud Storage</li>
+                    <li class="pricing__plan-info">Unlimited Users limit</li>
+                </ul>
+                <button class="pricing__btn button button--price">Get Now</button>
+            </section>
+        </div>
     </article>
     <section class="app">
-        <h2 class="app__title">Get start from now and increase productivity</h2>
-        <!-- <div class="app__logo-box"></div> -->
-        <a href="" class="app__link"><img src="./images/app.svg" alt="logo App Store" class="app__logo"></a>
-        <a href="" class="app__link"><img src="./images/play.svg" alt="logo Google Play" class="app__logo"></a>
-        <!-- </div> -->
+        <div class="app_container container">
+            <h2 class="app__title">Get start from now and increase productivity</h2>
+            <div class="app__logo-box">
+                <a href="" class="app__link"><img src="./images/app.svg" alt="logo App Store" class="app__logo"></a>
+                <a href="" class="app__link"><img src="./images/play.svg" alt="logo Google Play" class="app__logo"></a>
+            </div>
+        </div>
     </section>
-    <article class="contact">
-        <div class="container">
-            <h3 class="contact__title">AppLab</h3>
-            <p class="contact__info">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <ul class="contact__list">
-                <li class="contact__item">
-                    <div class="contact__icon"><i class="fab fa-facebook-f"></i></div>
-                </li>
-                <li class="contact__item">
-                    <div class="contact__icon"><i class="fab fa-twitter"></i></div>
-                </li>
-                <li class="contact__item">
-                    <div class="contact__icon"><i class="fab fa-facebook-f"></i></div>
-                </li>
-            </ul>
+    <article class="contact-box">
+        <div class="contact__container container">
+            <section class="contact">
+                <h3 class="contact__title">AppLab</h3>
+                <p class="contact__info">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <ul class="contact__list">
+                    <li class="contact__item">
+                        <div class="contact__icon"><i class="fab fa-facebook-f"></i></div>
+                    </li>
+                    <li class="contact__item">
+                        <div class="contact__icon"><i class="fab fa-twitter"></i></div>
+                    </li>
+                    <li class="contact__item">
+                        <div class="contact__icon"><i class="fab fa-facebook-f"></i></div>
+                    </li>
+                </ul>
+            </section>
             <section class="support">
                 <h4 class="support__title">Services</h4>
                 <ul class="support__list">
@@ -203,7 +214,7 @@
         </div>
     </article>
     <footer class="footer">
-        <div class="container">
+        <div class="footer__container container">
             Copyright &copy2020 All rights reserved
             <span class="footer__line"></span>This template is made with <i class="far fa-heart"></i>
             <span class="footer__company">Colorlib</span>

@@ -2,12 +2,11 @@ html {
     font-size: 10px;
 }
 
-/* html * {
-    font-weight: inherit;
-} */
-
 .container {
-    padding: 10px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 1440px;
 }
 
 .button {
@@ -15,7 +14,7 @@ html {
     padding: 15px 40px;
     border: none;
     border-radius: 8px;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     font-weight: 700;
     letter-spacing: 2px;
     color: white;
@@ -23,30 +22,29 @@ html {
 
 /* ------HEADER----- */
 
-.page__header {
-    background: url(../images/banner/banner.png) 50% 50% / cover no-repeat;
+.header {
+    background: url(../images/banner/banner.png) center bottom / cover no-repeat;
     color: white;
 }
 
 /* -----navigation----- */
 
 .header__nav {
-    padding: 10px;
     position: relative;
+    padding: 10px;
     background-color: #2C2C2C;
 }
 
 .nav__item {
-    padding-left: 30px;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     line-height: 250%;
 }
 
 .nav__icon {
-    font-size: 2.4rem;
     position: absolute;
     right: 20px;
     top: 10px;
+    font-size: 2.4rem;
 }
 
 .nav__list {
@@ -59,8 +57,12 @@ html {
     height: 100%;
 }
 
+.nav__link--lvl2 {
+    padding-left: 40px;
+}
+
 .fa-chevron-down {
-    margin-left: 20px;
+    display: none;
 }
 
 .nav__switcher:checked+.nav__list {
@@ -74,13 +76,14 @@ html {
 /* -----Header-main----- */
 
 .header__title {
-    margin-top: 30px;
+    padding-top: 30px;
     font-size: 2.8rem;
+    text-transform: capitalize;
 }
 
 .header__subtitle {
     margin-top: 20px;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
 }
 
 .header__btn {
@@ -91,6 +94,10 @@ html {
 .header__image-box {
     margin-top: 80px;
     text-align: center;
+}
+
+.header__image {
+    max-width: 80%;
 }
 
 .button--header {
@@ -104,19 +111,23 @@ html {
 }
 
 .features__title {
+    margin: 80px auto 0;
     font-size: 2.8rem;
     text-align: center;
 }
 
 .features__list {
-    margin: 40px auto;
-    width: max(260px, 50%);
     text-align: center;
 }
 
-.features__icon-box {
+.features__item {
     margin: 40px auto;
+    width: max(260px, 50%)
+}
+
+.features__icon-box {
     position: relative;
+    margin: 40px auto;
     width: 120px;
     height: 120px;
     border-radius: 20px;
@@ -152,7 +163,7 @@ html {
 
 .features__description {
     margin-top: 40px;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     line-height: 200%;
 }
 
@@ -173,7 +184,7 @@ html {
 
 .opinions-box {
     position: relative;
-    min-height: 50vh;
+    min-height: 60vh;
     background: url(../images/banner/testmonial.png) 50% 50% / cover no-repeat;
     color: white;
     text-align: center;
@@ -196,7 +207,6 @@ html {
     left: 0;
     right: 0;
     transform: translateY(-50%);
-    margin: 10px;
 }
 
 .opinions-box__title {
@@ -205,7 +215,7 @@ html {
 
 .opinion__content {
     margin-top: 20px;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
 }
 
 .opinion__stars {
@@ -216,7 +226,7 @@ html {
 .opinion__user-name {
     display: inline-block;
     margin-top: 20px;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     text-transform: uppercase;
 }
 
@@ -227,32 +237,32 @@ html {
 }
 
 .pricing__title {
-    margin: 40px 40px 0;
+    margin: 80px 40px 0;
     font-size: 2.8rem;
     text-align: center;
 }
 
 .pricing__subtitle {
     margin: 20px 40px 0;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     text-align: center;
 }
 
 .pricing__plan {
+    margin: 20px auto;
+    max-width: 400px;
     border: 14px solid #FDFDFD;
     border-radius: 14px;
-    margin: 20px auto 0;
-    max-width: 400px;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     text-align: center;
 }
 
 .pricing__plan-header {
     display: flex;
     justify-content: space-between;
+    padding: 0 20px;
     line-height: 6rem;
     font-weight: bold;
-    padding: 0 20px;
 }
 
 .pricing__plan-header--first {
@@ -288,9 +298,9 @@ html {
 }
 
 .button--price {
-    color: rgb(52, 141, 245);
     border: 1px solid rgb(52, 141, 245);
     background: transparent;
+    color: rgb(52, 141, 245);
 }
 
 /* -----APP----- */
@@ -300,30 +310,37 @@ html {
     text-align: center;
 }
 
+.app_container {
+    padding: 80px 20px;
+}
+
 .app__title {
-    padding: 80px 10px 20px;
+    padding: 10px 0;
     font-size: 2.8rem;
     text-align: center;
     color: white;
 }
 
-.app__link {
-    display: inline-block;
-    padding-bottom: 80px
-}
-
 /* ------contact----- */
 
-.contact {
+.contact-box {
     background-color: #1F1F1F;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     color: #888;
+}
 
+.contact__container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.contact__info {
+    margin: 20px 0;
 }
 
 .contact__title {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
     font-size: 2rem;
     color: white;
 }
@@ -331,12 +348,11 @@ html {
 .contact__list {
     display: flex;
     justify-content: flex-start;
-    margin-top: 20px;
 }
 
 .contact__icon {
     display: flex;
-    margin: 0 5px;
+    margin-right: 5px;
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -348,14 +364,18 @@ html {
 }
 
 .support {
-    font-size: 1.4rem;
-    line-height: 400%;
+    font-size: 1.6rem;
 }
 
 .support__title {
-    margin-top: 20px;
-    font-size: 1.8rem;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 2rem;
     color: white;
+}
+
+.support__item {
+    margin-top: 20px;
 }
 
 .support__link {
@@ -372,8 +392,12 @@ html {
     text-align: center;
 }
 
+.footer__container {
+    padding: 20px;
+}
+
 .footer__line {
-    display:inline-block;
+    display: inline-block;
     margin: 0 5px;
     height: 1rem;
     border-left: 1px solid #888
