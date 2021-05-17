@@ -191,13 +191,13 @@ html {
     text-align: center;
 }
 
-.opinions-box__background {
+.opinions-box::before {
+    content: "";
     position: absolute;
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;
-    z-index: 1;
     background-color: rgba(50, 155, 251, 0.5);
 }
 
