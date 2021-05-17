@@ -65,6 +65,10 @@
     width: 100%;
 }
 
+.nav__switcher:checked+.nav__list {
+    display: inherit;
+}
+
 /* -----APP----- */
 
 .app_container {
