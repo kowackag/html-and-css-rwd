@@ -11,7 +11,7 @@
   - [Useful resources](#useful-resources)
   - [Copyrights](#copyrights)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
+
 
 ## Overview 
 
