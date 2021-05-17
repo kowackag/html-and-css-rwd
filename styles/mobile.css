@@ -351,17 +351,14 @@ html {
     justify-content: flex-start;
 }
 
-.contact__icon {
-    display: flex;
-    margin-right: 5px;
+.fab {
+    display: inline-block;
+    margin-right: 10px;
     width: 30px;
-    height: 30px;
     border-radius: 50%;
     background-color: #444;
-}
-
-.fab {
-    margin: auto;
+    text-align: center;
+    line-height: 30px;
 }
 
 .support {
