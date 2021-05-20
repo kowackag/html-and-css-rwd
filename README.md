@@ -17,7 +17,8 @@
 
 ### The-challenge
 
-It was the one of the first challenge in my education process- that was built as a fully responsive website using Mobile-first workflow.
+It was one of my first challenges in my education process. 
+That was built as a fully responsive website using Mobile-first workflow.
 
 ### Links
 
@@ -27,15 +28,15 @@ It was the one of the first challenge in my education process- that was built as
 ### Screenshot
 
 
-#### mobile 
+#### Mobile => 560px
 
 ![](./assets/AppLab-mobile.png)
 
-#### tablet
+#### Tablet => 1060px
 
 ![](./assets/AppLab-tablet.png)
 
-#### desktop
+#### Desktop => 1800px
 
 ![](./assets/AppLab-desktop.png)
 
@@ -51,13 +52,13 @@ It was the one of the first challenge in my education process- that was built as
 
 ### Useful resources
 
-Font used in project `Poppins`, [Google Font](https://fonts.google.com/specimen/Poppins).
-
-Icons downloaded from [Font Awesome](https://fontawesome.com/).
+- [Google Font](https://fonts.google.com/specimen/Poppins) - Font (`Poppins`)
+- [Font Awesome](https://fontawesome.com/) - Icons. 
 
 ### Copyrights
-All copyrights belong to colorlib.com (https://colorlib.com).
-The template may be used in accordance with the [license] (https://colorlib.com/wp/licence/).
+
+All copyrights belong to [colorlib.com](https://colorlib.com).
+The template may be used in accordance with the [license](https://colorlib.com/wp/licence/).
 
 ## Author
 
