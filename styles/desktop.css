@@ -1,3 +1,11 @@
+html {
+    font-size: 12px;
+}
+
+:root {
+    --lightblue: rgb(66, 179, 250);
+}
+
 /* -----navigation----- */
 
 .header__nav {
@@ -36,7 +44,7 @@
 }
 
 .button--nav {
-    background-color: #42B3FA
+    background-color: var(--lightblue)
 }
 
 .nav__list-lvl2 {
@@ -50,18 +58,18 @@
 
 .nav__link:hover {
     text-decoration: underline;
-    background-color: #42B3FA;
+    background-color: var(--lightblue);
 }
 
 .nav__item:hover {
     position: relative;
-    background-color: #42B3FA;
+    background-color: var(--lightblue);
 }
 
 .nav__item:hover>.nav__list-lvl2 {
     position: absolute;
     display: block;
-    background-color: #42B3FA;
+    background-color: var(--lightblue);
     width: 100%;
 }
 

@@ -2,6 +2,14 @@ html {
     font-size: 10px;
 }
 
+:root {
+    --blue: rgb(52, 141, 245);
+    --orange: rgb(253, 145, 94);
+    --green: rgb(55, 239, 141);
+    --lightGrey: rgb(136, 136, 136);
+    --darkGrey: rgb(44, 44, 44);
+}
+
 .container {
     margin: 0 auto;
     padding-left: 20px;
@@ -19,6 +27,11 @@ html {
     font-weight: 700;
     letter-spacing: 2px;
     color: white;
+    transition: .3s;
+}
+
+.button:hover {
+    transform: scale(1.1);
 }
 
 /* ------HEADER----- */
@@ -33,7 +46,7 @@ html {
 .header__nav {
     position: relative;
     padding: 10px;
-    background-color: #2C2C2C;
+    background-color: var(--darkGrey);
 }
 
 .nav__item {
@@ -135,15 +148,15 @@ html {
 }
 
 .features__icon-box--blue {
-    background-color: #329BFB;
+    background-color: var(--blue);
 }
 
 .features__icon-box--orange {
-    background-color: #FD9B5D;
+    background-color: var(--orange);
 }
 
 .features__icon-box--green {
-    background-color: #76F4B2;
+    background-color: var(--green);
 }
 
 .features__icon {
@@ -173,7 +186,7 @@ html {
 }
 
 .button--features {
-    background-color: #0181F5;
+    background-color: var(--blue);
 }
 
 .features__image {
@@ -234,7 +247,7 @@ html {
 /* ------PRICING----- */
 
 .pricing {
-    color: #353535;
+    color: var(--darkGrey);
 }
 
 .pricing__title {
@@ -256,6 +269,11 @@ html {
     border-radius: 14px;
     font-size: 1.6rem;
     text-align: center;
+    transition: .2s;
+}
+
+.pricing__plan:hover {
+    box-shadow: 0 0 10px #333;
 }
 
 .pricing__plan-header {
@@ -268,22 +286,22 @@ html {
 
 .pricing__plan-header--first {
     background-color: rgba(52, 141, 245, .2);
-    color: rgb(52, 141, 245);
+    color: var(--blue);
 }
 
 .pricing__plan-header--second {
     background-color: rgba(253, 145, 94, .2);
-    color: rgb(253, 145, 94);
+    color: var(--orange);
 }
 
 .pricing__plan-header--third {
     background-color: rgba(55, 239, 141, .2);
-    color: rgb(55, 239, 141);
+    color: var(--green);
 }
 
 .pricing__plan-title {
     font-weight: 700;
-    color: #353535;
+    color: var(--darkGrey);
 }
 
 .pricing__plan-price {
@@ -299,15 +317,15 @@ html {
 }
 
 .button--price {
-    border: 1px solid rgb(52, 141, 245);
+    border: 1px solid var(--blue);
     background: transparent;
-    color: rgb(52, 141, 245);
+    color: var(--blue);
 }
 
 /* -----APP----- */
 
 .app {
-    background-color: #5DB2FF;
+    background-color: var(--blue);
     text-align: center;
 }
 
@@ -327,7 +345,7 @@ html {
 .contact-box {
     background-color: #1F1F1F;
     font-size: 1.6rem;
-    color: #888;
+    color: var(--lightGrey);
 }
 
 .contact__container {
@@ -356,9 +374,13 @@ html {
     margin-right: 10px;
     width: 30px;
     border-radius: 50%;
-    background-color: #444;
+    background-color: var(--darkGrey);
     text-align: center;
     line-height: 30px;
+}
+
+.contact__link {
+    color: var(--lightGrey);
 }
 
 .support {
@@ -378,7 +400,7 @@ html {
 
 .support__link {
     text-decoration: none;
-    color: #888;
+    color: var(--lightGrey);
 }
 
 /* -----FOOTER----- */
@@ -386,7 +408,7 @@ html {
 .footer {
     background-color: #000;
     font-size: 1.4rem;
-    color: #888;
+    color: var(--lightGrey);
     text-align: center;
 }
 
@@ -402,5 +424,5 @@ html {
 }
 
 .footer__company {
-    color: royalblue;
+    color: var(--blue);
 }
